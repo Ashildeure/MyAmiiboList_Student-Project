@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "nintendo_m" ;
+    src: url("../fonts/contm.ttf"),url("../fonts/contm.woff2") format("woff2");
+}
+@font-face {
+    font-family: "nintendo_l" ;
+    src: url("../fonts/contl.ttf"),url("../fonts/contl.woff2") format("woff2");
+}
+
+body{
+    font-family: "nintendo_m";
+    height: 100vh;
+    display: flex;
+    margin: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.presentation{
+    
+    text-align: center;
+}
+
+.presentation h2{
+    font-weight: lighter;
+    font-size: 350%;
+}
+
+.presentation h1{
+    font-size: 350%;
+}
+.presentation p{
+    text-align: center;
+    font-size: 150%;
+    padding: 0px 30%;
+    font-family: nintendo_m;
+}
+.div_search_bar{
+    margin: 5% 0% 3% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div_search_bar input{
+    padding: 0.7%;
+    width: 50%;
+    font-size: 20px;
+    font-family: nintendo_l;
+}
+.search{
+    border: none;
+    background-color: transparent;
+    width: 4%;
+    text-align: center;
+    cursor: pointer;
+}
+.search svg{
+    width: 65%;
+    height: 100%;
+    color:#fe0016 ;
+}
+
+.button_get_started{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #fe0016;
+    padding: 10px;
+    cursor: pointer;
+    font-family: nintendo_m;
+}
+
+.button_get_started:hover{
+    background-color: #cc0314;
+}
+.warning{
+    text-align: right;
+}
+
+.invalid_input{
+    color: #cc0314;
+    visibility: hidden;
+}

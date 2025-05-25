@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <main>
+        <div class="filters">
+        <h1>Filter by</h1>
+        <ul>
+            <li><input type="checkbox" name="Favorites" id="Favorites">Favorites</li>
+            <li><input type="checkbox" name="Collection" id="Collection">Collection</li>
+            <li>Categorie
+                <ul class="categories">
+                    <li><input type="checkbox" name="type" id="Card">Card</li>
+                    <li><input type="checkbox" name="type" id="Figure">Figure</li>
+                    <li><input type="checkbox" name="type" id="Yarn">Yarn</li>
+                    <li><input type="checkbox" name="type" id="Watch">Watch</li>
+                </ul>
+            </li>
+            <li>Serie
+                <ul class="series">
+                    <!-- TODO : Remplir avec toutes les séries dispo -->
+                    <li><input type="checkbox" name="Animal_Crossing" id="Animal_Crossing">Animal Crossing</li>
+                    <li><input type="checkbox" name="Zelda" id="Zelda">Zelda</li>
+                </ul>
+            </li>
+        </ul>
+        <button class="filtering">filter</button>
+        <button class="reset">reset filters</button>
+        </div>
+        <div class="right">
+            <nav>
+                <p> <strong class="nbResults"></strong> results</p>
+                <input type="text" placeholder="Search bar" class="search_bar">
+                <button class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+                <a href="collection.html" class="collection">Collection</a>
+            </nav>
+                <div class="amiibo_list">
+                </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script type="module" src="../js/main.js"></script>
+</html>
